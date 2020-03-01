@@ -15,4 +15,7 @@ describe('Vampire', () => {
         test('should correctly test selfHeal function', () =>  {
             expect(reusableVampire.selfHeal(10)).toEqual(30);
         });
+        test('should correctly test takeDamage function', () => {
+            expect(reusableVampire.takeDamage(10)).toEqual(10);
+        });
 });

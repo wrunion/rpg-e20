@@ -3,4 +3,8 @@ export class Vampire {
         this.name = name;
         this.hp = 20;
     }
+    selfHeal(points) {
+        this.hp += points;
+        return this.hp;
+    }
 }
