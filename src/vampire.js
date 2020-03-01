@@ -10,6 +10,7 @@ export class Vampire {
     takeDamage(points) {
         if (points > this.hp) {
             this.hp = 1;
+            return this.hp;
         } else {
             this.hp -= points;
             return this.hp;

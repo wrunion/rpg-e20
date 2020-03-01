@@ -18,5 +18,7 @@ describe('Vampire', () => {
         test('should correctly test takeDamage function', () => {
             expect(reusableVampire.takeDamage(10)).toEqual(10);
         });
-        
+        test('should test when damage is greater than hp', () => {
+            expect(reusableVampire.takeDamage(27)).toEqual(1);
+        });
 });
