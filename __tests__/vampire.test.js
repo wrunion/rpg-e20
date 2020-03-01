@@ -6,4 +6,8 @@ describe('Vampire', () => {
         let vampire = new Vampire("Vlad");
         expect(vampire.name).toEqual("Vlad");
     });
+    test('should correctly display hp (health points)', () => {
+        let hp = new Hp("20");
+        expect(vampire.hp).toEqual("20");
+    });
 });
