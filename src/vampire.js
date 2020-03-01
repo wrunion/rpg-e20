@@ -1,20 +1,7 @@
-export class Vampire {
-    constructor(name) {
-        this.name = name;
-        this.hp = 20;
-    }
-    selfHeal(points) {
-        this.hp += points;
-        return this.hp;
-    }
-    takeDamage(points) {
-        if (points > this.hp) {
-            this.hp = 1;
-            return this.hp;
-        } else {
-            this.hp -= points;
-            return this.hp;
-        }
+import { Character } from "./character.js";
 
+export class Vampire extends Character {
+    constructor(name, hp) {
+    super(name, hp);
     }
 }
