@@ -1,7 +1,7 @@
 export class Character {
-    constructor(name, characterType) {
+    constructor(name, hp) {
         this.name = name;
-        this.characterType = characterType;
+        this.hp = hp;
     }
 
     selfHeal(points) {
@@ -9,7 +9,7 @@ export class Character {
         return this.hp;
     }
     takeDamage(points) {
-        if (points > this.hp) {
+        if (points >= this.hp) {
             this.hp = 1;
             return this.hp;
         } else {
@@ -19,6 +19,6 @@ export class Character {
 
     }
     sayName() {
-        `Hi my name is ${this.name}`;
+        console.log(`Hi my name is ${this.name}`);
     }
 }
