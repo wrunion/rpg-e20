@@ -16,4 +16,11 @@ export class Gameboard {
         }
         return false;
     }
+    isGreenSquare(square) {
+        if (this.greenSquare.includes(square)) {
+            return true;
+        }
+       return false;
+    }
+
 }
