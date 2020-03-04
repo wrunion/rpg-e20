@@ -1,5 +1,6 @@
 import { Vampire } from './../src/vampire';
 
+
 describe('Vampire', () => {
     var reusableVampire;
 
