@@ -11,4 +11,8 @@ describe ('Gameboard', () => {
         expect(gameboard.isRedSquare(2)).toEqual(true);
         expect(gameboard.isRedSquare(6)).toEqual(false);
     });
+    test(`should have an isGreenSquare function to see if an entered number is a green square`, () => {
+        expect(gameboard.isGreenSquare(1)).toEqual(true);
+        expect(gameboard.isGreenSquare(2)).toEqual(false);
+    });
 });
