@@ -6,4 +6,9 @@ describe ('Gameboard', () => {
         expect(gameboard.rollDice()).toBeGreaterThanOrEqual(1);
         expect(gameboard.rollDice()).toBeLessThanOrEqual(6);
     });
+    test(`Should have an isRedSquare function to see if an entered number is a red square`, () => {
+        let gameboard = new Gameboard();
+        expect(gameboard.isRedSquare(2)).toEqual(true);
+        expect(gameboard.isRedSquare(6)).toEqual(false);
+    });
 });
