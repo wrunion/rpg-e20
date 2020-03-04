@@ -7,9 +7,6 @@ export class Gameboard {
  rollDice() {
   return(Math.floor(Math.random()*6+1));
  }
- // takeTurn() {
- //     let spaces = this.rollDice();
- // }
 
  isRedSquare(square) {
   return this.redSquare.includes(square); 
@@ -19,7 +16,7 @@ export class Gameboard {
  }
 
  isSpecialEventSquare(square) {
-
+  return this.specialEventSquares.includes(square);
  }
 
 }

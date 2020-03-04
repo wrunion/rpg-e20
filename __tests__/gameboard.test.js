@@ -9,18 +9,19 @@ describe ('Gameboard', () => {
  });
  test(`Should have an isRedSquare function to see if an entered number is a red square`, () => {
   let gameboard = new Gameboard();
-  expect(gameboard.isRedSquare(2)).toEqual(true);
-  expect(gameboard.isRedSquare(6)).toEqual(false);
+  expect(gameboard.isRedSquare(1)).toEqual(true);
+  expect(gameboard.isRedSquare(5)).toEqual(false);
  });
  test(`should have an isGreenSquare function to see if an entered number is a green square`, () => {
   let gameboard = new Gameboard();
-  expect(gameboard.isGreenSquare(1)).toEqual(true);
-  expect(gameboard.isGreenSquare(2)).toEqual(false);
+  expect(gameboard.isGreenSquare(2)).toEqual(true);
+  expect(gameboard.isGreenSquare(4)).toEqual(false);
  });
 
  test(`Should have an isSpecialEventSquare function that takes a number from a user and returns true or false`, () => {
   let gameboard = new Gameboard();
-  expect(gameboard.isSpecialEventSquare(1)).toEqual(true);
+  expect(gameboard.isSpecialEventSquare(5)).toEqual(true);
+  expect(gameboard.isSpecialEventSquare(6)).toEqual(false);
  });
 
 });
