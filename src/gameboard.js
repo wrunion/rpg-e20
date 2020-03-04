@@ -17,7 +17,7 @@ export class Gameboard {
   return this.greenSquare.includes(square);
  }
 
- isEventSquare(square) {
+ isSpecialEventSquare(square) {
 
  }
 
